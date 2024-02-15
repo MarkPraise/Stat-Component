@@ -118,7 +118,7 @@
       #imgContainer{
         order: 1;
         height: 100%;
-        width: 50%;
+        max-width: 50%;
       }
       #imgContainer img{
         border-top-left-radius: 0rem;
