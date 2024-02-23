@@ -69,6 +69,7 @@
   }
   ul.stat span{
     text-transform:uppercase;
+    color:hsla(0, 0%, 100%, 0.75) ;
   }
 
 
@@ -78,4 +79,20 @@
       width: 70%;
       max-width: 1440px;
     }
+    .content:first-child{
+      order: 1;
+    }
+    .infoContainer{
+      order: -1;
+      align-items: start;
+      justify-content: space-around;
+    }
+    .infoContainer *{
+      text-align: left;
+    }
+    ul.stat{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
   }
