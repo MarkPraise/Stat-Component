@@ -1,20 +1,3 @@
-
-/* .trial {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-  } */
-
-
-  /* .lexend-deca-<uniquifier> {
-    font-family: "Lexend Deca", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  } */
-
   .container{
     background-color:hsl(233, 47%, 7%) ;min-height: 100vh;
     color: white;
@@ -29,16 +12,18 @@
     border-radius: .5rem;
     overflow: hidden;
     max-width:320px;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
   }
   img{
     max-width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .infoContainer{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap:2rem;
     align-items: center;
     padding: 1.5rem;
   }
@@ -74,23 +59,26 @@
     text-transform:uppercase;
     color:hsla(0, 0%, 100%, 0.75) ;
   }
+ 
 
 
   @media (min-width:375px){
     .content{
+      display: flex;
       flex-direction: row;
-      width: 900px;
+      width: 80%;
       max-width: 1360px;
+    }
+    img{
+      object-position: 80% center;
     }
     .content:first-child{
       order: 1;
-      
     }
     .infoContainer{
       order: -1;
       align-items: start;
       justify-content: space-around;
-      flex: 1;
     }
     .infoContainer *{
       text-align: left;
